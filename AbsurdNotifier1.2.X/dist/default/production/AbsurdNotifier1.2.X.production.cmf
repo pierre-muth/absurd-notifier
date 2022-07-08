@@ -1,0 +1,925 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\AbsurdNotifier1.2.X.production.o
+ivt0x8 CODE 0 8 8 12 1 2
+cinit CODE 0 26A8 26A8 52 1 2
+idloc IDLOC 5 200000 200000 10 1 1
+text0 CODE 0 2008 2008 2AC 1 2
+text1 CODE 0 2392 2392 C4 1 2
+text2 CODE 0 275E 275E 1A 1 2
+text3 CODE 0 2778 2778 1A 1 2
+text4 CODE 0 2634 2634 74 1 2
+text5 CODE 0 27AA 27AA E 1 2
+text6 CODE 0 27B8 27B8 E 1 2
+text7 CODE 0 27C6 27C6 E 1 2
+text8 CODE 0 26FA 26FA 40 1 2
+text9 CODE 0 27D4 27D4 E 1 2
+nvCOMRAM COMRAM 1 1B 1B F 1 1
+text10 CODE 0 27E2 27E2 E 1 2
+text11 CODE 0 273A 273A 24 1 2
+text12 CODE 0 2456 2456 BC 1 2
+text13 CODE 0 2792 2792 18 1 2
+text14 CODE 0 2802 2802 4 1 2
+text15 CODE 0 22B4 22B4 DE 1 2
+text16 CODE 0 25A8 25A8 8C 1 2
+text17 CODE 0 2806 2806 2 1 2
+text18 CODE 0 27F0 27F0 6 1 2
+text19 CODE 0 2808 2808 2 1 2
+text20 CODE 0 2512 2512 96 1 2
+text21 CODE 0 27F6 27F6 6 1 2
+idataCOMRAM CODE 0 27FC 27FC 5 1 1
+cstackCOMRAM COMRAM 1 1 1 1A 1 1
+smallconst SMALLCONST 0 2000 2000 8 1 2
+dataCOMRAM COMRAM 1 2F 2F 5 1 1
+bssBIGRAM BIGRAM 1 1740 1740 8C0 1 1
+bssCOMRAM COMRAM 1 2A 2A 5 1 1
+config CONFIG 4 300000 300000 A 1 1
+$C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+idloc IDLOC 5 200000 200000 10 1 1
+init CODE 0 1A 1A 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 A 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-173F 1
+SFR 3800-3FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST 1E-1FFF 1
+CONST 2801-2801 1
+CONST 280A-1FFFF 1
+SMALLCONST 2801-2801 1
+SMALLCONST 280A-1FFFF 1
+CODE 4-7 1
+CODE 1E-1FFF 1
+CODE 2801-2801 1
+CODE 280A-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-173F 1
+BIGRAM 34-173F 1
+BIGSFR 3800-3FFF 1
+COMRAM 34-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 2801-2801 1
+MEDIUMCONST 280A-FFFF 1
+MEDIUMCONST 12000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\AbsurdNotifier1.2.X.production.o
+27F6 text21 CODE >150:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27F6 text21 CODE >152:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27FA text21 CODE >153:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2512 text20 CODE >72:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2512 text20 CODE >73:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2518 text20 CODE >74:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+251C text20 CODE >76:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+252C text20 CODE >77:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+254A text20 CODE >78:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+254C text20 CODE >79:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2550 text20 CODE >80:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2566 text20 CODE >83:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2578 text20 CODE >84:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+257C text20 CODE >85:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2592 text20 CODE >86:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+259A text20 CODE >87:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+259E text20 CODE >88:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+25A6 text20 CODE >91:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2808 text19 CODE >165:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2808 text19 CODE >168:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27F0 text18 CODE >66:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+27F0 text18 CODE >69:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+27F4 text18 CODE >70:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2806 text17 CODE >155:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2806 text17 CODE >158:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+25A8 text16 CODE >58:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+25B4 text16 CODE >61:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+25D2 text16 CODE >63:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+25EC text16 CODE >64:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+25F0 text16 CODE >65:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+260C text16 CODE >67:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+2626 text16 CODE >73:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+22B4 text15 CODE >85:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+22B6 text15 CODE >87:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+22C6 text15 CODE >89:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+22E4 text15 CODE >90:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+230A text15 CODE >91:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2330 text15 CODE >92:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2334 text15 CODE >93:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+235A text15 CODE >94:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+238E text15 CODE >95:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2390 text15 CODE >99:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2802 text14 CODE >52:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+2802 text14 CODE >55:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+2804 text14 CODE >56:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/interrupt_manager.c
+2792 text13 CODE >60:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2792 text13 CODE >63:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2798 text13 CODE >65:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+279C text13 CODE >67:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+27A0 text13 CODE >69:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+27A4 text13 CODE >71:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+27A8 text13 CODE >72:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2456 text12 CODE >55:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2456 text12 CODE >60:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+245A text12 CODE >61:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+245E text12 CODE >62:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2462 text12 CODE >63:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2466 text12 CODE >64:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+246A text12 CODE >65:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+246E text12 CODE >70:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2472 text12 CODE >71:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2474 text12 CODE >72:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2476 text12 CODE >73:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2478 text12 CODE >74:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+247C text12 CODE >75:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2480 text12 CODE >80:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2486 text12 CODE >81:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+248A text12 CODE >82:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+248C text12 CODE >83:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2490 text12 CODE >84:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2492 text12 CODE >85:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2494 text12 CODE >90:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2498 text12 CODE >91:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+249C text12 CODE >92:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24A0 text12 CODE >93:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24A4 text12 CODE >94:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24A8 text12 CODE >95:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24AC text12 CODE >100:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24B0 text12 CODE >101:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24B4 text12 CODE >102:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24B8 text12 CODE >103:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24BC text12 CODE >104:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24C0 text12 CODE >105:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24C4 text12 CODE >110:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24C8 text12 CODE >111:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24CC text12 CODE >112:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24D0 text12 CODE >113:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24D4 text12 CODE >114:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24D8 text12 CODE >115:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24DC text12 CODE >120:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24DE text12 CODE >121:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24E0 text12 CODE >122:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24E4 text12 CODE >123:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24E8 text12 CODE >124:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24EC text12 CODE >125:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24EE text12 CODE >130:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24F0 text12 CODE >131:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24F2 text12 CODE >132:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24F4 text12 CODE >133:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24F6 text12 CODE >134:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24FA text12 CODE >135:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+24FC text12 CODE >144:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2500 text12 CODE >145:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2504 text12 CODE >146:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2508 text12 CODE >147:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+250C text12 CODE >148:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+2510 text12 CODE >149:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/pin_manager.c
+273A text11 CODE >74:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+273A text11 CODE >77:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2740 text11 CODE >79:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2744 text11 CODE >81:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2748 text11 CODE >83:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+274C text11 CODE >85:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2750 text11 CODE >87:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2754 text11 CODE >89:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2758 text11 CODE >91:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+275C text11 CODE >92:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+27E2 text10 CODE >160:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27E2 text10 CODE >162:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27EE text10 CODE >163:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27D4 text9 CODE >170:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27D4 text9 CODE >172:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27E0 text9 CODE >173:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+26FA text8 CODE >66:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+26FA text8 CODE >69:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2700 text8 CODE >71:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2704 text8 CODE >73:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2708 text8 CODE >75:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+270C text8 CODE >77:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2710 text8 CODE >78:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2712 text8 CODE >79:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2716 text8 CODE >80:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2718 text8 CODE >81:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2728 text8 CODE >82:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+2738 text8 CODE >83:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/spi1.c
+27C6 text7 CODE >208:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27C6 text7 CODE >209:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27D2 text7 CODE >210:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27B8 text6 CODE >200:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27B8 text6 CODE >201:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27C4 text6 CODE >202:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27AA text5 CODE >204:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27AA text5 CODE >205:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+27B6 text5 CODE >206:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2634 text4 CODE >66:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2634 text4 CODE >73:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+263A text4 CODE >76:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+263E text4 CODE >79:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2642 text4 CODE >82:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2646 text4 CODE >85:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+264A text4 CODE >88:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+264E text4 CODE >91:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2652 text4 CODE >94:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2656 text4 CODE >97:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+265A text4 CODE >100:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+265E text4 CODE >103:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2662 text4 CODE >106:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2666 text4 CODE >109:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+266A text4 CODE >112:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+266E text4 CODE >115:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2672 text4 CODE >118:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2682 text4 CODE >119:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2692 text4 CODE >120:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+26A2 text4 CODE >122:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+26A6 text4 CODE >124:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2778 text3 CODE >50:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2778 text3 CODE >52:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+277C text3 CODE >53:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2780 text3 CODE >54:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2784 text3 CODE >55:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2788 text3 CODE >56:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+278C text3 CODE >57:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+2790 text3 CODE >58:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/mcc.c
+275E text2 CODE >170:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2760 text2 CODE >172:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2760 text2 CODE >174:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2770 text2 CODE >176:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2776 text2 CODE >177:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\mcc_generated_files/uart1.c
+2392 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2392 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2396 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23A4 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23AC text1 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23B0 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23BE text1 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23C6 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23CA text1 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23D2 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23E4 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23E8 text1 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23EC text1 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23F2 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+23F4 text1 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2402 text1 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2408 text1 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+241E text1 CODE >32:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2426 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2428 text1 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+242E text1 CODE >36:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2434 text1 CODE >38:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2444 text1 CODE >39:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+244C text1 CODE >40:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2454 text1 CODE >41:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\awdiv.c
+2008 text0 CODE >93:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2008 text0 CODE >96:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+200C text0 CODE >97:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+201C text0 CODE >98:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+202C text0 CODE >99:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2032 text0 CODE >106:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2034 text0 CODE >111:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2036 text0 CODE >116:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+203C text0 CODE >117:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2054 text0 CODE >118:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+205C text0 CODE >119:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2062 text0 CODE >120:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+207E text0 CODE >122:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2084 text0 CODE >123:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+208A text0 CODE >124:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20A2 text0 CODE >127:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20A4 text0 CODE >130:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20A8 text0 CODE >131:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20C0 text0 CODE >132:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20C4 text0 CODE >133:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+20DC text0 CODE >134:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+211E text0 CODE >135:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+213E text0 CODE >136:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2150 text0 CODE >137:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2160 text0 CODE >138:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+217C text0 CODE >139:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2180 text0 CODE >141:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2186 text0 CODE >142:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21A2 text0 CODE >143:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21B4 text0 CODE >144:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21BA text0 CODE >145:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21CC text0 CODE >148:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21D0 text0 CODE >149:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21E6 text0 CODE >150:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21EE text0 CODE >151:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+21FE text0 CODE >152:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+221E text0 CODE >153:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2226 text0 CODE >154:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+222E text0 CODE >155:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2232 text0 CODE >158:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2238 text0 CODE >159:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+223E text0 CODE >160:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2256 text0 CODE >163:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+225C text0 CODE >164:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2264 text0 CODE >165:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2276 text0 CODE >166:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2292 text0 CODE >168:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+2294 text0 CODE >169:C:\Users\muthi\Documents\MPLABX\AbsurdNotifier1.2.X\main.c
+26A8 cinit CODE >9435:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26A8 cinit CODE >9437:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26A8 cinit CODE >9440:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26A8 cinit CODE >9484:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26AA cinit CODE >9485:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26AC cinit CODE >9486:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26AE cinit CODE >9487:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26B0 cinit CODE >9488:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26B2 cinit CODE >9489:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26B4 cinit CODE >9490:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26B8 cinit CODE >9491:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26BC cinit CODE >9492:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26BC cinit CODE >9493:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26BE cinit CODE >9494:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26C4 cinit CODE >9495:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26C6 cinit CODE >9496:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26C8 cinit CODE >9497:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26CA cinit CODE >9501:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26CE cinit CODE >9502:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26D2 cinit CODE >9503:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26D2 cinit CODE >9504:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26D4 cinit CODE >9505:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26D6 cinit CODE >9506:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26D8 cinit CODE >9507:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26DA cinit CODE >9508:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26DC cinit CODE >9509:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26DE cinit CODE >9512:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26E0 cinit CODE >9513:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26E2 cinit CODE >9514:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26E4 cinit CODE >9515:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26E6 cinit CODE >9516:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26E8 cinit CODE >9524:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26EA cinit CODE >9525:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26EC cinit CODE >9526:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26EE cinit CODE >9527:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26F0 cinit CODE >9528:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26F2 cinit CODE >9529:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26F4 cinit CODE >9535:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26F4 cinit CODE >9537:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+26F6 cinit CODE >9538:C:\Users\muthi\AppData\Local\Temp\xcAs5b0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_SPI1SCKPPS 3ADE 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1SDIPPS 3ADF 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv@counter 8 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hspace_0 280A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hspace_1 2000 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hspace_4 60000A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_timeout 2A 0 COMRAM 1 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_UART1_SetFramingErrorHandler 27C6 0 CODE 0 text6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_UART1_SetOverrunErrorHandler 27B8 0 CODE 0 text5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_INTERRUPT_Initialize 2806 0 CODE 0 text14 dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD_Initialize 273A 0 CODE 0 text11 dist/default/production\AbsurdNotifier1.2.X.production.o
+UART1_SetOverrunErrorHandler@interruptHandler 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_ReadByte 27F6 0 CODE 0 text21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lsmallconst 2000 0 SMALLCONST 0 smallconst dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATA 3FBA 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATB 3FBB 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATC 3FBC 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATD 3FBD 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATE 3FBE 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATF 3FBF 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD0 39C0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD1 39C1 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD2 39C2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD3 39C3 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD4 39C4 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD5 39C5 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD6 39C6 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PMD7 39C7 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUA 3A41 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUB 3A51 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUC 3A61 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUD 3A71 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUE 3A81 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_WPUF 3A91 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+_main 2008 0 CODE 0 text0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+start 1A 0 CODE 0 init C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_Initialize 273A 0 CODE 0 text8 dist/default/production\AbsurdNotifier1.2.X.production.o
+_commandsequence 2F 0 COMRAM 1 dataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_rxBuffer 1740 0 BIGRAM 1 bssBIGRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_spi1_configuration 2006 0 SMALLCONST 0 smallconst dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_ErrorHandler 1B 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_screenBuffer 1C00 0 BIGRAM 1 bssBIGRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+intlevel0 0 0 CODE 0 text C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+intlevel1 0 0 CODE 0 text C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+intlevel2 0 0 CODE 0 text C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+intlevel3 0 0 CODE 0 text C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_PMD_Initialize 275E 0 CODE 0 text11 dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\AbsurdNotifier1.2.X.production.o
+__pidataCOMRAM 27FC 0 CODE 0 idataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1ERRIE 3DFA 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1ERRIR 3DF9 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1RXPPS 3AE5 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1CON0bits 3D14 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_Initialize 26FA 0 CODE 0 text8 dist/default/production\AbsurdNotifier1.2.X.production.o
+_spi1_configuration 2001 0 SMALLCONST 0 smallconst dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELA 3A40 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELB 3A50 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELC 3A60 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELD 3A70 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELE 3A80 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ANSELF 3A90 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_INTERRUPT_InterruptManager 2634 0 CODE 0 text16 dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_RxInterruptHandler 24 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_commandIter 2C 0 COMRAM 1 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AbsurdNotifier1.2.X.production.o
+main@col 18 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@pix 17 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@row 16 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@val 14 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of___awdiv 2456 0 CODE 0 text1 dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLA 3A44 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLB 3A54 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLC 3A64 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLD 3A74 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLE 3A84 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_INLVLF 3A94 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_Write 275E 0 CODE 0 text2 dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPIRXhandler 2512 0 CODE 0 text20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_INTCON0bits 3FD2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+UART1_SetFramingErrorHandler@interruptHandler 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_PIN_MANAGER_Initialize 2456 0 CODE 0 text12 dist/default/production\AbsurdNotifier1.2.X.production.o
+start_initialization 26A8 0 CODE 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCONA 3A42 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCONB 3A52 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCONC 3A62 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCOND 3A72 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCONE 3A82 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_ODCONF 3A92 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCFRQ 39DF 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_Initialize 2634 0 CODE 0 text4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_ReadByte 27FC 0 CODE 0 text21 dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISCbits 3FC4 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RB1I2C 3A5A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RB2I2C 3A5B 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RC3I2C 3A6A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RC4I2C 3A6B 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RC7PPS 3A17 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RD0I2C 3A7A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_RD1I2C 3A7B 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SYSTEM_Initialize 2792 0 CODE 0 text3 dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1CON0bits 3DF2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1BRGH 3DF6 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1BRGL 3DF5 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1CON0 3DF2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1CON1 3DF3 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1CON2 3DF4 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1FIFO 3DF7 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+_bufferIndex 32 0 COMRAM 1 dataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@screenIndex 10 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/production\AbsurdNotifier1.2.X.production.o
+_byteReceived 2D 0 COMRAM 1 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\AbsurdNotifier1.2.X.production.o
+__smallconst 2000 0 SMALLCONST 0 smallconst C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hconfig 30000A 0 CONFIG 4 config dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPIRXhandler 25A8 0 CODE 0 text20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\AbsurdNotifier1.2.X.production.o
+_INTERRUPT_Initialize 2802 0 CODE 0 text14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hinit 1E 0 CODE 0 init dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\AbsurdNotifier1.2.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\AbsurdNotifier1.2.X.production.o
+__Linit 1A 0 CODE 0 init dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\AbsurdNotifier1.2.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_SetInterruptHandler 27E2 0 CODE 0 text10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__S0 280A 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__S1 2000 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/production\AbsurdNotifier1.2.X.production.o
+IVTBASEH 3FD6 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+IVTBASEL 3FD5 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+IVTBASEU 3FD7 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_uart1RxLastError 2E 0 COMRAM 1 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_UART1_Initialize 26A8 0 CODE 0 text4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__pnvCOMRAM 1B 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1BAUD 3D19 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1CON0 3D14 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1CON1 3D15 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1CON2 3D16 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__pivt0x8 8 0 CODE 0 ivt0x8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\AbsurdNotifier1.2.X.production.o
+_SYSTEM_Initialize 2778 0 CODE 0 text3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hramtop 2000 0 RAM 0 ramtop dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\AbsurdNotifier1.2.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\AbsurdNotifier1.2.X.production.o
+_INTERRUPT_InterruptManager 25A8 0 CODE 0 text16 dist/default/production\AbsurdNotifier1.2.X.production.o
+_PIE2bits 3992 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext10 27E2 0 CODE 0 text10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext11 273A 0 CODE 0 text11 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext12 2456 0 CODE 0 text12 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext13 2792 0 CODE 0 text13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext14 2802 0 CODE 0 text14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext15 22B4 0 CODE 0 text15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext16 25A8 0 CODE 0 text16 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext17 2806 0 CODE 0 text17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext18 27F0 0 CODE 0 text18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext19 2808 0 CODE 0 text19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext20 2512 0 CODE 0 text20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext21 27F6 0 CODE 0 text21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext22 0 0 CODE 0 text22 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_SetRxInterruptHandler 27E2 0 CODE 0 text9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_PIN_MANAGER_Initialize 2512 0 CODE 0 text12 dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv 2392 0 CODE 0 text1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\AbsurdNotifier1.2.X.production.o
+UART1_SetErrorHandler@interruptHandler 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\AbsurdNotifier1.2.X.production.o
+_LATDbits 3FBD 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_DefaultHandler 2806 0 CODE 0 text17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\AbsurdNotifier1.2.X.production.o
+main@block 15 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\AbsurdNotifier1.2.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__end_of_SPI1_Open 2392 0 CODE 0 text15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_UART1_Write 2778 0 CODE 0 text2 dist/default/production\AbsurdNotifier1.2.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+stacklo 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+_SPIhandler 27F0 0 CODE 0 text18 dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCCON1 39D9 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCCON3 39DB 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCTUNE 39DE 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Livt0x8 8 0 CODE 0 ivt0x8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__pbssBIGRAM 1740 0 BIGRAM 1 bssBIGRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__pbssCOMRAM 2A 0 COMRAM 1 bssCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+SPI1_SetInterruptHandler@handler 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_PIR2bits 39A2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_PIR3bits 39A3 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+SPI1_Open@spi1UniqueConfiguration 5 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_SetFramingErrorHandler 27B8 0 CODE 0 text6 dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_SetOverrunErrorHandler 27AA 0 CODE 0 text5 dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1SSPPS 3AE0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1TCNTL 3D12 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+end_of_initialization 26F4 0 CODE 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_Open 22B4 0 CODE 0 text15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\AbsurdNotifier1.2.X.production.o
+___awdiv@quotient A 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+?___awdiv 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_FramingErrorHandler 21 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_OverrunErrorHandler 1E 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lramtop 2000 0 RAM 0 ramtop dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\AbsurdNotifier1.2.X.production.o
+__pcinit 26A8 0 CODE 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext0 2008 0 CODE 0 text0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext1 2392 0 CODE 0 text1 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext2 275E 0 CODE 0 text2 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext3 2778 0 CODE 0 text3 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext4 2634 0 CODE 0 text4 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext5 27AA 0 CODE 0 text5 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext6 27B8 0 CODE 0 text6 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext7 27C6 0 CODE 0 text7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext8 26FA 0 CODE 0 text8 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ptext9 27D4 0 CODE 0 text9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\AbsurdNotifier1.2.X.production.o
+__ramtop 2000 0 RAM 0 ramtop C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\AbsurdNotifier1.2.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__psmallconst 2000 0 SMALLCONST 0 smallconst dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPIhandler 27F6 0 CODE 0 text18 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_DefaultRxHandler 280A 0 CODE 0 text19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCONA 3A43 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCONB 3A53 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCONC 3A63 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCOND 3A73 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCONE 3A83 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SLRCONF 3A93 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+___heap_lo 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\xcAs5b0.o
+___param_bank 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of__initialization 26F4 0 CODE 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+main@rxMask 12 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\AbsurdNotifier1.2.X.production.o
+main@scMask 13 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_DefaultHandler 2808 0 CODE 0 text17 dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_InterruptHandler 27 0 COMRAM 1 nvCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1CLK 3D1C 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1RXB 3D10 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1TXB 3D11 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_DefaultRxHandler 2808 0 CODE 0 text19 dist/default/production\AbsurdNotifier1.2.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+main@rxIndex E 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_SPI1_SetInterruptHandler 27F0 0 CODE 0 text10 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_main 22B4 0 CODE 0 text0 dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_UART1_SetErrorHandler 27D4 0 CODE 0 text7 dist/default/production\AbsurdNotifier1.2.X.production.o
+SPI1_SetRxInterruptHandler@handler 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCEN 39DD 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISA 3FC2 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISB 3FC3 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISC 3FC4 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISD 3FC5 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISE 3FC6 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_TRISF 3FC7 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P1H 3DED 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P1L 3DEC 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P2H 3DEF 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P2L 3DEE 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P3H 3DF1 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1P3L 3DF0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1RXB 3DE8 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1TXB 3DEA 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1UIR 3DF8 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\AbsurdNotifier1.2.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\AbsurdNotifier1.2.X.production.o
+__end_of_OSCILLATOR_Initialize 27AA 0 CODE 0 text13 dist/default/production\AbsurdNotifier1.2.X.production.o
+__initialization 26A8 0 CODE 0 cinit dist/default/production\AbsurdNotifier1.2.X.production.o
+_UART1_SetErrorHandler 27C6 0 CODE 0 text7 dist/default/production\AbsurdNotifier1.2.X.production.o
+__pdataCOMRAM 2F 0 COMRAM 1 dataCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hsmallconst 2008 0 SMALLCONST 0 smallconst dist/default/production\AbsurdNotifier1.2.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\AbsurdNotifier1.2.X.production.o
+_U1ERRIRbits 3DF9 0 ABS 0 - dist/default/production\AbsurdNotifier1.2.X.production.o
+_SPI1_SetRxInterruptHandler 27D4 0 CODE 0 text9 dist/default/production\AbsurdNotifier1.2.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AbsurdNotifier1.2.X.production.o
+_OSCILLATOR_Initialize 2792 0 CODE 0 text13 dist/default/production\AbsurdNotifier1.2.X.production.o
+UART1_Write@txData 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AbsurdNotifier1.2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+ivt0x8 0 8 8 16 1
+text0 0 2008 2008 7F9 1
+text14 0 2802 2802 8 1
+cstackCOMRAM 1 1 1 33 1
+reset_vec 0 0 0 4 1
+smallconst 0 2000 2000 8 1
+bssBIGRAM 1 1740 1740 8C0 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
